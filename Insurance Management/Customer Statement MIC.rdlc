@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No_Customer">
+          <DataField>No_Customer</DataField>
+        </Field>
+        <Field Name="Statement_No">
+          <DataField>Statement_No</DataField>
+        </Field>
+        <Field Name="startdate">
+          <DataField>startdate</DataField>
+        </Field>
+        <Field Name="enddate">
+          <DataField>enddate</DataField>
+        </Field>
+        <Field Name="custaddr1">
+          <DataField>custaddr1</DataField>
+        </Field>
+        <Field Name="custaddr2">
+          <DataField>custaddr2</DataField>
+        </Field>
+        <Field Name="custaddr3">
+          <DataField>custaddr3</DataField>
+        </Field>
+        <Field Name="custaddr4">
+          <DataField>custaddr4</DataField>
+        </Field>
+        <Field Name="custaddr5">
+          <DataField>custaddr5</DataField>
+        </Field>
+        <Field Name="openingbal">
+          <DataField>openingbal</DataField>
+        </Field>
+        <Field Name="openingbalFormat">
+          <DataField>openingbalFormat</DataField>
+        </Field>
+        <Field Name="closingbal">
+          <DataField>closingbal</DataField>
+        </Field>
+        <Field Name="closingbalFormat">
+          <DataField>closingbalFormat</DataField>
+        </Field>
+        <Field Name="BalatopeningKSH">
+          <DataField>BalatopeningKSH</DataField>
+        </Field>
+        <Field Name="BalatopeningKSHFormat">
+          <DataField>BalatopeningKSHFormat</DataField>
+        </Field>
+        <Field Name="BalatopeningUSD">
+          <DataField>BalatopeningUSD</DataField>
+        </Field>
+        <Field Name="BalatopeningUSDFormat">
+          <DataField>BalatopeningUSDFormat</DataField>
+        </Field>
+        <Field Name="BalatclosingKSH">
+          <DataField>BalatclosingKSH</DataField>
+        </Field>
+        <Field Name="BalatclosingKSHFormat">
+          <DataField>BalatclosingKSHFormat</DataField>
+        </Field>
+        <Field Name="BalatclosingUSD">
+          <DataField>BalatclosingUSD</DataField>
+        </Field>
+        <Field Name="BalatclosingUSDFormat">
+          <DataField>BalatclosingUSDFormat</DataField>
+        </Field>
+        <Field Name="CurrCode">
+          <DataField>CurrCode</DataField>
+        </Field>
+        <Field Name="Description_CustLedgerEntry">
+          <DataField>Description_CustLedgerEntry</DataField>
+        </Field>
+        <Field Name="PostingDate_CustLedgerEntry">
+          <DataField>PostingDate_CustLedgerEntry</DataField>
+        </Field>
+        <Field Name="DocumentNo_CustLedgerEntry">
+          <DataField>DocumentNo_CustLedgerEntry</DataField>
+        </Field>
+        <Field Name="policyno">
+          <DataField>policyno</DataField>
+        </Field>
+        <Field Name="OriginalAmount_CustLedgerEntry">
+          <DataField>OriginalAmount_CustLedgerEntry</DataField>
+        </Field>
+        <Field Name="OriginalAmount_CustLedgerEntryFormat">
+          <DataField>OriginalAmount_CustLedgerEntryFormat</DataField>
+        </Field>
+        <Field Name="TL">
+          <DataField>TL</DataField>
+        </Field>
+        <Field Name="TLFormat">
+          <DataField>TLFormat</DataField>
+        </Field>
+        <Field Name="PCF">
+          <DataField>PCF</DataField>
+        </Field>
+        <Field Name="PCFFormat">
+          <DataField>PCFFormat</DataField>
+        </Field>
+        <Field Name="SD">
+          <DataField>SD</DataField>
+        </Field>
+        <Field Name="SDFormat">
+          <DataField>SDFormat</DataField>
+        </Field>
+        <Field Name="Gross_Premium">
+          <DataField>Gross_Premium</DataField>
+        </Field>
+        <Field Name="Gross_PremiumFormat">
+          <DataField>Gross_PremiumFormat</DataField>
+        </Field>
+        <Field Name="Amount_Paid">
+          <DataField>Amount_Paid</DataField>
+        </Field>
+        <Field Name="Amount_PaidFormat">
+          <DataField>Amount_PaidFormat</DataField>
+        </Field>
+        <Field Name="oustandingpremiums">
+          <DataField>oustandingpremiums</DataField>
+        </Field>
+        <Field Name="oustandingpremiumsFormat">
+          <DataField>oustandingpremiumsFormat</DataField>
+        </Field>
+        <Field Name="grosspremum2">
+          <DataField>grosspremum2</DataField>
+        </Field>
+        <Field Name="grosspremum2Format">
+          <DataField>grosspremum2Format</DataField>
+        </Field>
+        <Field Name="basicpremium">
+          <DataField>basicpremium</DataField>
+        </Field>
+        <Field Name="basicpremiumFormat">
+          <DataField>basicpremiumFormat</DataField>
+        </Field>
+        <Field Name="USD">
+          <DataField>USD</DataField>
+        </Field>
+        <Field Name="sum1">
+          <DataField>sum1</DataField>
+        </Field>
+        <Field Name="sum1Format">
+          <DataField>sum1Format</DataField>
+        </Field>
+        <Field Name="sum2">
+          <DataField>sum2</DataField>
+        </Field>
+        <Field Name="sum2Format">
+          <DataField>sum2Format</DataField>
+        </Field>
+        <Field Name="rembal">
+          <DataField>rembal</DataField>
+        </Field>
+        <Field Name="rembalFormat">
+          <DataField>rembalFormat</DataField>
+        </Field>
+        <Field Name="rembalUSD">
+          <DataField>rembalUSD</DataField>
+        </Field>
+        <Field Name="rembalUSDFormat">
+          <DataField>rembalUSDFormat</DataField>
+        </Field>
+        <Field Name="Paidamount77">
+          <DataField>Paidamount77</DataField>
+        </Field>
+        <Field Name="Paidamount77Format">
+          <DataField>Paidamount77Format</DataField>
+        </Field>
+        <Field Name="Paidamount77USD">
+          <DataField>Paidamount77USD</DataField>
+        </Field>
+        <Field Name="Paidamount77USDFormat">
+          <DataField>Paidamount77USDFormat</DataField>
+        </Field>
+        <Field Name="RunningBalanceUSD_">
+          <DataField>RunningBalanceUSD_</DataField>
+        </Field>
+        <Field Name="RunningBalanceUSD_Format">
+          <DataField>RunningBalanceUSD_Format</DataField>
+        </Field>
+        <Field Name="RunningBalance_">
+          <DataField>RunningBalance_</DataField>
+        </Field>
+        <Field Name="RunningBalance_Format">
+          <DataField>RunningBalance_Format</DataField>
+        </Field>
+        <Field Name="FaxNo_CompanyInformation">
+          <DataField>FaxNo_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Name_CompanyInformation">
+          <DataField>Name_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address_CompanyInformation">
+          <DataField>Address_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address2_CompanyInformation">
+          <DataField>Address2_CompanyInformation</DataField>
+        </Field>
+        <Field Name="City_CompanyInformation">
+          <DataField>City_CompanyInformation</DataField>
+        </Field>
+        <Field Name="PhoneNo_CompanyInformation">
+          <DataField>PhoneNo_CompanyInformation</DataField>
+        </Field>
+        <Field Name="EMail_CompanyInformation">
+          <DataField>EMail_CompanyInformation</DataField>
+        </Field>
+        <Field Name="HomePage_CompanyInformation">
+          <DataField>HomePage_CompanyInformation</DataField>
+        </Field>
+        <Field Name="CompanyPic2_CompanyInformation">
+          <DataField>CompanyPic2_CompanyInformation</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

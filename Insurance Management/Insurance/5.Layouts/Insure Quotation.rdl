@@ -1,0 +1,1016 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>202a9b30-2262-443c-abf3-9c864dfb907f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="insurelines">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>8.79167in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>1.12028in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="Rectangle1">
+                          <ReportItems>
+                            <Tablix Name="Tablix2">
+                              <TablixBody>
+                                <TablixColumns>
+                                  <TablixColumn>
+                                    <Width>7.79167in</Width>
+                                  </TablixColumn>
+                                </TablixColumns>
+                                <TablixRows>
+                                  <TablixRow>
+                                    <Height>0.25in</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox29">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">Description Insure Lines</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox29</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                  <TablixRow>
+                                    <Height>0.25in</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox3">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto" />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox3</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                  <TablixRow>
+                                    <Height>0.25in</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Description_InsureLines2">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=Fields!CoverLines.Value</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Description_InsureLines</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                  <TablixRow>
+                                    <Height>0.25in</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox32">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto" />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox32</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                </TablixRows>
+                              </TablixBody>
+                              <TablixColumnHierarchy>
+                                <TablixMembers>
+                                  <TablixMember />
+                                </TablixMembers>
+                              </TablixColumnHierarchy>
+                              <TablixRowHierarchy>
+                                <TablixMembers>
+                                  <TablixMember>
+                                    <TablixHeader>
+                                      <Size>1in</Size>
+                                      <CellContents>
+                                        <Textbox Name="Textbox4">
+                                          <CanGrow>true</CanGrow>
+                                          <KeepTogether>true</KeepTogether>
+                                          <Paragraphs>
+                                            <Paragraph>
+                                              <TextRuns>
+                                                <TextRun>
+                                                  <Value EvaluationMode="Auto">"Description Type"</Value>
+                                                  <Style />
+                                                </TextRun>
+                                              </TextRuns>
+                                              <Style />
+                                            </Paragraph>
+                                          </Paragraphs>
+                                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                                          <Style>
+                                            <Border>
+                                              <Color>LightGrey</Color>
+                                              <Style>Solid</Style>
+                                            </Border>
+                                            <PaddingLeft>2pt</PaddingLeft>
+                                            <PaddingRight>2pt</PaddingRight>
+                                            <PaddingTop>2pt</PaddingTop>
+                                            <PaddingBottom>2pt</PaddingBottom>
+                                          </Style>
+                                        </Textbox>
+                                      </CellContents>
+                                    </TablixHeader>
+                                    <TablixMembers>
+                                      <TablixMember />
+                                    </TablixMembers>
+                                    <KeepWithGroup>After</KeepWithGroup>
+                                  </TablixMember>
+                                  <TablixMember>
+                                    <Group Name="DescriptionType">
+                                      <GroupExpressions>
+                                        <GroupExpression>=Fields!DescriptionType.Value</GroupExpression>
+                                      </GroupExpressions>
+                                    </Group>
+                                    <SortExpressions>
+                                      <SortExpression>
+                                        <Value>=Fields!DescriptionType.Value</Value>
+                                      </SortExpression>
+                                    </SortExpressions>
+                                    <TablixHeader>
+                                      <Size>1in</Size>
+                                      <CellContents>
+                                        <Textbox Name="DescriptionType">
+                                          <CanGrow>true</CanGrow>
+                                          <KeepTogether>true</KeepTogether>
+                                          <Paragraphs>
+                                            <Paragraph>
+                                              <TextRuns>
+                                                <TextRun>
+                                                  <Value EvaluationMode="Auto">COVER:</Value>
+                                                  <Style />
+                                                </TextRun>
+                                              </TextRuns>
+                                              <Style />
+                                            </Paragraph>
+                                          </Paragraphs>
+                                          <rd:DefaultName>DescriptionType</rd:DefaultName>
+                                          <Style>
+                                            <Border>
+                                              <Color>LightGrey</Color>
+                                              <Style>Solid</Style>
+                                            </Border>
+                                            <PaddingLeft>2pt</PaddingLeft>
+                                            <PaddingRight>2pt</PaddingRight>
+                                            <PaddingTop>2pt</PaddingTop>
+                                            <PaddingBottom>2pt</PaddingBottom>
+                                          </Style>
+                                        </Textbox>
+                                      </CellContents>
+                                    </TablixHeader>
+                                    <TablixMembers>
+                                      <TablixMember>
+                                        <KeepWithGroup>After</KeepWithGroup>
+                                      </TablixMember>
+                                      <TablixMember>
+                                        <Group Name="Details1" />
+                                      </TablixMember>
+                                      <TablixMember>
+                                        <KeepWithGroup>Before</KeepWithGroup>
+                                      </TablixMember>
+                                    </TablixMembers>
+                                  </TablixMember>
+                                </TablixMembers>
+                              </TablixRowHierarchy>
+                              <DataSetName>DataSet_Result</DataSetName>
+                              <Top>0.12028in</Top>
+                              <Height>1in</Height>
+                              <Width>8.79167in</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Tablix>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!No_InsureHeader.Value</GroupExpression>
+                    </GroupExpressions>
+                    <PageBreak>
+                      <BreakLocation>Between</BreakLocation>
+                    </PageBreak>
+                    <Parent>=Fields!No_InsureHeader.Value</Parent>
+                  </Group>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <KeepTogether>true</KeepTogether>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Top>1.01042in</Top>
+            <Left>0.01042in</Left>
+            <Height>1.12028in</Height>
+            <Width>8.79167in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Textbox Name="Textbox16">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">=First(Fields!InsuredName_InsureHeader.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>0.38889in</Top>
+            <Left>2.20834in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox15">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">=First(Fields!No_InsureHeader.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>0.38889in</Top>
+            <Left>0.72917in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Rectangle Name="Rectangle2">
+            <ReportItems>
+              <Tablix Name="Tablix3">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>7.79167in</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.25in</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox30">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">Description Insure Lines</Value>
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox29</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.25in</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox6">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto" />
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox3</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.25in</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Description_InsureLines3">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Fields!GeographicalDesc.Value</Value>
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Description_InsureLines</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.25in</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox33">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto" />
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox32</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>1in</Size>
+                        <CellContents>
+                          <Textbox Name="Textbox5">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value EvaluationMode="Auto">"Description Type"</Value>
+                                    <Style />
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox4</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                      <KeepWithGroup>After</KeepWithGroup>
+                    </TablixMember>
+                    <TablixMember>
+                      <Group Name="DescriptionType2">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!DescriptionType.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!DescriptionType.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <TablixHeader>
+                        <Size>1in</Size>
+                        <CellContents>
+                          <Textbox Name="DescriptionType2">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value EvaluationMode="Auto">GEOGRAPHICAL AREA/SITUATION:</Value>
+                                    <Style />
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>DescriptionType</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember>
+                          <KeepWithGroup>After</KeepWithGroup>
+                        </TablixMember>
+                        <TablixMember>
+                          <Group Name="Details2" />
+                        </TablixMember>
+                        <TablixMember>
+                          <KeepWithGroup>Before</KeepWithGroup>
+                        </TablixMember>
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet_Result</DataSetName>
+                <Top>0.12028in</Top>
+                <Height>1in</Height>
+                <Width>8.79167in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.35763in</Top>
+            <Height>1.12028in</Height>
+            <Width>8.79167in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>3.47791in</Height>
+        <Style />
+      </Body>
+      <Width>8.80209in</Width>
+      <Page>
+        <PageHeader>
+          <Height>1in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!No_InsureHeader.Value, "DataSet_Result")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>0.41542in</Top>
+              <Left>0.75917in</Left>
+              <Height>0.25in</Height>
+              <Width>1in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No_InsureHeader">
+          <DataField>No_InsureHeader</DataField>
+        </Field>
+        <Field Name="InsuredName_InsureHeader">
+          <DataField>InsuredName_InsureHeader</DataField>
+        </Field>
+        <Field Name="RiskID_InsureLines">
+          <DataField>RiskID_InsureLines</DataField>
+        </Field>
+        <Field Name="FamilyName_InsureLines">
+          <DataField>FamilyName_InsureLines</DataField>
+        </Field>
+        <Field Name="FirstNames_InsureLines">
+          <DataField>FirstNames_InsureLines</DataField>
+        </Field>
+        <Field Name="Title_InsureLines">
+          <DataField>Title_InsureLines</DataField>
+        </Field>
+        <Field Name="Sex_InsureLines">
+          <DataField>Sex_InsureLines</DataField>
+        </Field>
+        <Field Name="DateofBirth_InsureLines">
+          <DataField>DateofBirth_InsureLines</DataField>
+        </Field>
+        <Field Name="RelationshiptoApplicant_InsureLines">
+          <DataField>RelationshiptoApplicant_InsureLines</DataField>
+        </Field>
+        <Field Name="Occupation_InsureLines">
+          <DataField>Occupation_InsureLines</DataField>
+        </Field>
+        <Field Name="Age_InsureLines">
+          <DataField>Age_InsureLines</DataField>
+        </Field>
+        <Field Name="BMI_InsureLines">
+          <DataField>BMI_InsureLines</DataField>
+        </Field>
+        <Field Name="BMI_InsureLinesFormat">
+          <DataField>BMI_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="PremiumAmount_InsureLines">
+          <DataField>PremiumAmount_InsureLines</DataField>
+        </Field>
+        <Field Name="PremiumAmount_InsureLinesFormat">
+          <DataField>PremiumAmount_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="PolicyNo_InsureLines">
+          <DataField>PolicyNo_InsureLines</DataField>
+        </Field>
+        <Field Name="SumInsured_InsureLines">
+          <DataField>SumInsured_InsureLines</DataField>
+        </Field>
+        <Field Name="SumInsured_InsureLinesFormat">
+          <DataField>SumInsured_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="Rateage_InsureLines">
+          <DataField>Rateage_InsureLines</DataField>
+        </Field>
+        <Field Name="Rateage_InsureLinesFormat">
+          <DataField>Rateage_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="RegistrationNo_InsureLines">
+          <DataField>RegistrationNo_InsureLines</DataField>
+        </Field>
+        <Field Name="Make_InsureLines">
+          <DataField>Make_InsureLines</DataField>
+        </Field>
+        <Field Name="YearofManufacture_InsureLines">
+          <DataField>YearofManufacture_InsureLines</DataField>
+        </Field>
+        <Field Name="TypeofBody_InsureLines">
+          <DataField>TypeofBody_InsureLines</DataField>
+        </Field>
+        <Field Name="CubicCapacitycc_InsureLines">
+          <DataField>CubicCapacitycc_InsureLines</DataField>
+        </Field>
+        <Field Name="SeatingCapacity_InsureLines">
+          <DataField>SeatingCapacity_InsureLines</DataField>
+        </Field>
+        <Field Name="CarryingCapacity_InsureLines">
+          <DataField>CarryingCapacity_InsureLines</DataField>
+        </Field>
+        <Field Name="NoofEmployees_InsureLines">
+          <DataField>NoofEmployees_InsureLines</DataField>
+        </Field>
+        <Field Name="DescriptionType_InsureLines">
+          <DataField>DescriptionType_InsureLines</DataField>
+        </Field>
+        <Field Name="EstimatedAnnualEarnings_InsureLines">
+          <DataField>EstimatedAnnualEarnings_InsureLines</DataField>
+        </Field>
+        <Field Name="EstimatedAnnualEarnings_InsureLinesFormat">
+          <DataField>EstimatedAnnualEarnings_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="SerialNo_InsureLines">
+          <DataField>SerialNo_InsureLines</DataField>
+        </Field>
+        <Field Name="LimitofLiability_InsureLines">
+          <DataField>LimitofLiability_InsureLines</DataField>
+        </Field>
+        <Field Name="LimitofLiability_InsureLinesFormat">
+          <DataField>LimitofLiability_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="Position_InsureLines">
+          <DataField>Position_InsureLines</DataField>
+        </Field>
+        <Field Name="Category_InsureLines">
+          <DataField>Category_InsureLines</DataField>
+        </Field>
+        <Field Name="EmployeeName_InsureLines">
+          <DataField>EmployeeName_InsureLines</DataField>
+        </Field>
+        <Field Name="Windscreen_InsureLines">
+          <DataField>Windscreen_InsureLines</DataField>
+        </Field>
+        <Field Name="Windscreen_InsureLinesFormat">
+          <DataField>Windscreen_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="RadioCassette_InsureLines">
+          <DataField>RadioCassette_InsureLines</DataField>
+        </Field>
+        <Field Name="RadioCassette_InsureLinesFormat">
+          <DataField>RadioCassette_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="WindscreenRate_InsureLines">
+          <DataField>WindscreenRate_InsureLines</DataField>
+        </Field>
+        <Field Name="WindscreenRate_InsureLinesFormat">
+          <DataField>WindscreenRate_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="RadioCassetteRate_InsureLines">
+          <DataField>RadioCassetteRate_InsureLines</DataField>
+        </Field>
+        <Field Name="RadioCassetteRate_InsureLinesFormat">
+          <DataField>RadioCassetteRate_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="EngineNo_InsureLines">
+          <DataField>EngineNo_InsureLines</DataField>
+        </Field>
+        <Field Name="ChassisNo_InsureLines">
+          <DataField>ChassisNo_InsureLines</DataField>
+        </Field>
+        <Field Name="Death_InsureLines">
+          <DataField>Death_InsureLines</DataField>
+        </Field>
+        <Field Name="Death_InsureLinesFormat">
+          <DataField>Death_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="PermanentDisability_InsureLines">
+          <DataField>PermanentDisability_InsureLines</DataField>
+        </Field>
+        <Field Name="PermanentDisability_InsureLinesFormat">
+          <DataField>PermanentDisability_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="TemporaryDisability_InsureLines">
+          <DataField>TemporaryDisability_InsureLines</DataField>
+        </Field>
+        <Field Name="TemporaryDisability_InsureLinesFormat">
+          <DataField>TemporaryDisability_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="Medicalexpenses_InsureLines">
+          <DataField>Medicalexpenses_InsureLines</DataField>
+        </Field>
+        <Field Name="Medicalexpenses_InsureLinesFormat">
+          <DataField>Medicalexpenses_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="DeathRate_InsureLines">
+          <DataField>DeathRate_InsureLines</DataField>
+        </Field>
+        <Field Name="DeathRate_InsureLinesFormat">
+          <DataField>DeathRate_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="PDRate_InsureLines">
+          <DataField>PDRate_InsureLines</DataField>
+        </Field>
+        <Field Name="PDRate_InsureLinesFormat">
+          <DataField>PDRate_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="TDRate_InsureLines">
+          <DataField>TDRate_InsureLines</DataField>
+        </Field>
+        <Field Name="TDRate_InsureLinesFormat">
+          <DataField>TDRate_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="MERate_InsureLines">
+          <DataField>MERate_InsureLines</DataField>
+        </Field>
+        <Field Name="MERate_InsureLinesFormat">
+          <DataField>MERate_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="FirstLossSumInsured_InsureLines">
+          <DataField>FirstLossSumInsured_InsureLines</DataField>
+        </Field>
+        <Field Name="FirstLossSumInsured_InsureLinesFormat">
+          <DataField>FirstLossSumInsured_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="TotalValueatRisk_InsureLines">
+          <DataField>TotalValueatRisk_InsureLines</DataField>
+        </Field>
+        <Field Name="TotalValueatRisk_InsureLinesFormat">
+          <DataField>TotalValueatRisk_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="FirstLossRate_InsureLines">
+          <DataField>FirstLossRate_InsureLines</DataField>
+        </Field>
+        <Field Name="FirstLossRate_InsureLinesFormat">
+          <DataField>FirstLossRate_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="TVARate_InsureLines">
+          <DataField>TVARate_InsureLines</DataField>
+        </Field>
+        <Field Name="TVARate_InsureLinesFormat">
+          <DataField>TVARate_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="PerCapita_InsureLines">
+          <DataField>PerCapita_InsureLines</DataField>
+        </Field>
+        <Field Name="PerCapita_InsureLinesFormat">
+          <DataField>PerCapita_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="RateType_InsureLines">
+          <DataField>RateType_InsureLines</DataField>
+        </Field>
+        <Field Name="PLL_InsureLines">
+          <DataField>PLL_InsureLines</DataField>
+        </Field>
+        <Field Name="PLL_InsureLinesFormat">
+          <DataField>PLL_InsureLinesFormat</DataField>
+        </Field>
+        <Field Name="Description_InsureLines">
+          <DataField>Description_InsureLines</DataField>
+        </Field>
+        <Field Name="ActualValue_InsureLines">
+          <DataField>ActualValue_InsureLines</DataField>
+        </Field>
+        <Field Name="DescriptionType">
+          <DataField>DescriptionType</DataField>
+        </Field>
+        <Field Name="CoverLines">
+          <DataField>CoverLines</DataField>
+        </Field>
+        <Field Name="GeographicalDesc">
+          <DataField>GeographicalDesc</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

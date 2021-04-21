@@ -1,0 +1,1138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>1cedd9cb-0099-46d2-8b8c-d90e78cb0214</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="Textbox3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">DATE…</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Label>REQdate</Label>
+                    <Value EvaluationMode="Auto">=First(Fields!Request_Header1__Request_Date_.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <Format>d</Format>
+                      <TextDecoration>Underline</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">………………</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value xml:space="preserve" EvaluationMode="Auto"> </Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto" />
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">I/we require Kshs……</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">=Fields!Amount_RequestHeader.Value</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <Format>n2</Format>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">…… Amount in words...</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">=Fields!AmountInWords.Value</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">.</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">................for the Purchase/Repair/Pay per diem or refunded of the following:
+</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">
+OFFICER’S NAME…</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Label>Ename</Label>
+                    <Value EvaluationMode="Auto">=First(Fields!Request_Header1__Employee_Name_.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">……………………………
+
+PERSONAL NUMBER…</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Label>Eno</Label>
+                    <Value EvaluationMode="Auto">=First(Fields!EmployeeNo_RequestHeader1.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">…………………………………………
+
+SIGNATURE……………………………………………………………………………..
+
+
+</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">REQUESTED BY:</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">
+HEAD OF SECTION…………………………………………………………………...
+
+SIGNATURE……………………………………………………………………………..
+
+
+</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">AUTHORISED BY</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">
+CENTRE ACCOUNTANT-----------------------------------------------------------
+
+A/C CHARGED---------------------------------------------------------------------
+
+
+</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">APPROVED BY:</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">
+    DIRECTOR GENERAL (CEO)…………………………………………………..
+
+SIGNATURE……………………………………………………………………………
+
+
+RECEIVED BY………………………………………………………………………..
+
+SIGNATURE…………………………………………………………………………..
+
+DATE……………………………………….
+
+
+
+</Value>
+                    <Style>
+                      <FontFamily>Bookman Old Style</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox3</rd:DefaultName>
+            <Top>0.46371cm</Top>
+            <Left>0.39348cm</Left>
+            <Height>18.56521cm</Height>
+            <Width>16.05384cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <Height>19.02892cm</Height>
+        <Style />
+      </Body>
+      <Width>19.31094cm</Width>
+      <Page>
+        <PageHeader>
+          <Height>3.84582cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <ReportItems>
+            <Textbox Name="Textbox2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">FINANCIAL REPORTING CENTRE (FRC)</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Bookman Old Style</FontFamily>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">REQUISITIONING FOR CASH</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Bookman Old Style</FontFamily>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto" />
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Bookman Old Style</FontFamily>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto" />
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Bookman Old Style</FontFamily>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>0.70583cm</Top>
+              <Left>6.02933cm</Left>
+              <Height>2.80486cm</Height>
+              <Width>12.45528cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>1.42875cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>1cm</RightMargin>
+        <TopMargin>2cm</TopMargin>
+        <BottomMargin>2cm</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="Name">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Name</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Name</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Designation">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Designation</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Designation</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="StaffNo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>StaffNo</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>StaffNo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Dept">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Dept</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Dept</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ApplyText">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ApplyText</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ApplyText</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="InWords">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>InWords</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>InWords</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PurposesText">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PurposesText</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PurposesText</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NatureOfDuty">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>NatureOfDuty</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>NatureOfDuty</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ItineraryLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ItineraryLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ItineraryLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NoOfDaysLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>NoOfDaysLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>NoOfDaysLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DateLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DateLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DateLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ApplSignatureLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ApplSignatureLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ApplSignatureLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AuthorizeText">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AuthorizeText</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AuthorizeText</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CertifyText">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CertifyText</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CertifyText</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DFACmmnts">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DFACmmnts</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DFACmmnts</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DGDFALbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DGDFALbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DGDFALbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ImprestAccountantIC">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ImprestAccountantIC</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ImprestAccountantIC</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VBCAccountantText">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VBCAccountantText</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VBCAccountantText</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VBCAccountantICLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VBCAccountantICLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VBCAccountantICLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AuthorizationLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AuthorizationLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AuthorizationLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ChiefAccountantLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ChiefAccountantLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ChiefAccountantLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PostingLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PostingLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PostingLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PostedByLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PostedByLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PostedByLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Sign">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Sign</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Sign</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Date">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Date</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Date</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Sign1">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Sign1</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Sign1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>1</NumberOfColumns>
+      <NumberOfRows>26</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Name</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>Designation</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>StaffNo</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>Dept</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>ApplyText</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>5</RowIndex>
+          <ParameterName>InWords</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>6</RowIndex>
+          <ParameterName>PurposesText</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>7</RowIndex>
+          <ParameterName>NatureOfDuty</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>8</RowIndex>
+          <ParameterName>ItineraryLbl</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>9</RowIndex>
+          <ParameterName>NoOfDaysLbl</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>10</RowIndex>
+          <ParameterName>DateLbl</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>11</RowIndex>
+          <ParameterName>ApplSignatureLbl</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>12</RowIndex>
+          <ParameterName>AuthorizeText</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>13</RowIndex>
+          <ParameterName>CertifyText</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>14</RowIndex>
+          <ParameterName>DFACmmnts</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>15</RowIndex>
+          <ParameterName>DGDFALbl</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>16</RowIndex>
+          <ParameterName>ImprestAccountantIC</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>17</RowIndex>
+          <ParameterName>VBCAccountantText</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>18</RowIndex>
+          <ParameterName>VBCAccountantICLbl</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>19</RowIndex>
+          <ParameterName>AuthorizationLbl</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>20</RowIndex>
+          <ParameterName>ChiefAccountantLbl</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>21</RowIndex>
+          <ParameterName>PostingLbl</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>22</RowIndex>
+          <ParameterName>PostedByLbl</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>23</RowIndex>
+          <ParameterName>Sign</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>24</RowIndex>
+          <ParameterName>Date</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>25</RowIndex>
+          <ParameterName>Sign1</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>6c1bb12d-8168-4544-ab03-e64e7dd74933</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyInfo_Name__">
+          <DataField>CompanyInfo_Name__</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO_TXT002_CompanyInfo_Address_CompanyInfo__Post_Code__CompanyInfo_City_">
+          <DataField>STRSUBSTNO_TXT002_CompanyInfo_Address_CompanyInfo__Post_Code__CompanyInfo_City_</DataField>
+        </Field>
+        <Field Name="ContactInfo">
+          <DataField>ContactInfo</DataField>
+        </Field>
+        <Field Name="CompanyInfo_Picture">
+          <DataField>CompanyInfo_Picture</DataField>
+        </Field>
+        <Field Name="Request_Header1__No__">
+          <DataField>Request_Header1__No__</DataField>
+        </Field>
+        <Field Name="Request_Header1__Request_Date_">
+          <DataField>Request_Header1__Request_Date_</DataField>
+        </Field>
+        <Field Name="Request_Header1__Employee_Name_">
+          <DataField>Request_Header1__Employee_Name_</DataField>
+        </Field>
+        <Field Name="NumberText_1_">
+          <DataField>NumberText_1_</DataField>
+        </Field>
+        <Field Name="NumberText_2_">
+          <DataField>NumberText_2_</DataField>
+        </Field>
+        <Field Name="CompName">
+          <DataField>CompName</DataField>
+        </Field>
+        <Field Name="TripNo_RequestHeader1">
+          <DataField>TripNo_RequestHeader1</DataField>
+        </Field>
+        <Field Name="EmployeeNo_RequestHeader1">
+          <DataField>EmployeeNo_RequestHeader1</DataField>
+        </Field>
+        <Field Name="TripStartDate_RequestHeader1">
+          <DataField>TripStartDate_RequestHeader1</DataField>
+        </Field>
+        <Field Name="TripExpectedEndDate_RequestHeader1">
+          <DataField>TripExpectedEndDate_RequestHeader1</DataField>
+        </Field>
+        <Field Name="NoofDays_RequestHeader1">
+          <DataField>NoofDays_RequestHeader1</DataField>
+        </Field>
+        <Field Name="NoofDays_RequestHeader1Format">
+          <DataField>NoofDays_RequestHeader1Format</DataField>
+        </Field>
+        <Field Name="BankAccount_RequestHeader1">
+          <DataField>BankAccount_RequestHeader1</DataField>
+        </Field>
+        <Field Name="CustomerAC_RequestHeader1">
+          <DataField>CustomerAC_RequestHeader1</DataField>
+        </Field>
+        <Field Name="CustAcc_Name">
+          <DataField>CustAcc_Name</DataField>
+        </Field>
+        <Field Name="ImprestAmount_RequestHeader1">
+          <DataField>ImprestAmount_RequestHeader1</DataField>
+        </Field>
+        <Field Name="ImprestAmount_RequestHeader1Format">
+          <DataField>ImprestAmount_RequestHeader1Format</DataField>
+        </Field>
+        <Field Name="TotalAmountRequested_RequestHeader1">
+          <DataField>TotalAmountRequested_RequestHeader1</DataField>
+        </Field>
+        <Field Name="TotalAmountRequested_RequestHeader1Format">
+          <DataField>TotalAmountRequested_RequestHeader1Format</DataField>
+        </Field>
+        <Field Name="ChequeNo_RequestHeader1">
+          <DataField>ChequeNo_RequestHeader1</DataField>
+        </Field>
+        <Field Name="ChequeDate_RequestHeader1">
+          <DataField>ChequeDate_RequestHeader1</DataField>
+        </Field>
+        <Field Name="PayMode_RequestHeader1">
+          <DataField>PayMode_RequestHeader1</DataField>
+        </Field>
+        <Field Name="Purpose_RequestHeader1">
+          <DataField>Purpose_RequestHeader1</DataField>
+        </Field>
+        <Field Name="UserRemarks_RequestHeader1">
+          <DataField>UserRemarks_RequestHeader1</DataField>
+        </Field>
+        <Field Name="IMPREST_CLAIM_FORMCaption">
+          <DataField>IMPREST_CLAIM_FORMCaption</DataField>
+        </Field>
+        <Field Name="Request_Header1__No__Caption">
+          <DataField>Request_Header1__No__Caption</DataField>
+        </Field>
+        <Field Name="Request_Header1__Request_Date_Caption">
+          <DataField>Request_Header1__Request_Date_Caption</DataField>
+        </Field>
+        <Field Name="Request_Header1__Employee_Name_Caption">
+          <DataField>Request_Header1__Employee_Name_Caption</DataField>
+        </Field>
+        <Field Name="Department_Caption">
+          <DataField>Department_Caption</DataField>
+        </Field>
+        <Field Name="AccNoLbl">
+          <DataField>AccNoLbl</DataField>
+        </Field>
+        <Field Name="AccountDesFootLbl">
+          <DataField>AccountDesFootLbl</DataField>
+        </Field>
+        <Field Name="AccountNameLbl">
+          <DataField>AccountNameLbl</DataField>
+        </Field>
+        <Field Name="AmtLbl">
+          <DataField>AmtLbl</DataField>
+        </Field>
+        <Field Name="DepartmentName">
+          <DataField>DepartmentName</DataField>
+        </Field>
+        <Field Name="JobTitle">
+          <DataField>JobTitle</DataField>
+        </Field>
+        <Field Name="LESSADVANCEAMOUNT">
+          <DataField>LESSADVANCEAMOUNT</DataField>
+        </Field>
+        <Field Name="LESSADVANCEAMOUNTFormat">
+          <DataField>LESSADVANCEAMOUNTFormat</DataField>
+        </Field>
+        <Field Name="Amountdue">
+          <DataField>Amountdue</DataField>
+        </Field>
+        <Field Name="AmountdueFormat">
+          <DataField>AmountdueFormat</DataField>
+        </Field>
+        <Field Name="Amount_RequestHeader">
+          <DataField>Amount_RequestHeader</DataField>
+        </Field>
+        <Field Name="Amount_RequestHeaderFormat">
+          <DataField>Amount_RequestHeaderFormat</DataField>
+        </Field>
+        <Field Name="AmountInWords">
+          <DataField>AmountInWords</DataField>
+        </Field>
+        <Field Name="impamount">
+          <DataField>impamount</DataField>
+        </Field>
+        <Field Name="impamountFormat">
+          <DataField>impamountFormat</DataField>
+        </Field>
+        <Field Name="TOTALDUE">
+          <DataField>TOTALDUE</DataField>
+        </Field>
+        <Field Name="TOTALDUEFormat">
+          <DataField>TOTALDUEFormat</DataField>
+        </Field>
+        <Field Name="Impamount2">
+          <DataField>Impamount2</DataField>
+        </Field>
+        <Field Name="Impamount2Format">
+          <DataField>Impamount2Format</DataField>
+        </Field>
+        <Field Name="Request_Lines1_Description">
+          <DataField>Request_Lines1_Description</DataField>
+        </Field>
+        <Field Name="Request_Lines1__Request_Lines1___Requested_Amount_">
+          <DataField>Request_Lines1__Request_Lines1___Requested_Amount_</DataField>
+        </Field>
+        <Field Name="Request_Lines1__Request_Lines1___Requested_Amount_Format">
+          <DataField>Request_Lines1__Request_Lines1___Requested_Amount_Format</DataField>
+        </Field>
+        <Field Name="Request_Lines1__Account_No_">
+          <DataField>Request_Lines1__Account_No_</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO___1__2__CurrencyCodeText__Request_Lines1___Requested_Amount__">
+          <DataField>STRSUBSTNO___1__2__CurrencyCodeText__Request_Lines1___Requested_Amount__</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO___1__2__CurrencyCodeText__Request_Header1___Imprest_Amount__">
+          <DataField>STRSUBSTNO___1__2__CurrencyCodeText__Request_Header1___Imprest_Amount__</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO___1__2__CurrencyCodeText_Netamt_">
+          <DataField>STRSUBSTNO___1__2__CurrencyCodeText_Netamt_</DataField>
+        </Field>
+        <Field Name="EmptyString">
+          <DataField>EmptyString</DataField>
+        </Field>
+        <Field Name="V3rdapproverdate_">
+          <DataField>V3rdapproverdate_</DataField>
+        </Field>
+        <Field Name="V3rdapprover_">
+          <DataField>V3rdapprover_</DataField>
+        </Field>
+        <Field Name="V2ndapprover_">
+          <DataField>V2ndapprover_</DataField>
+        </Field>
+        <Field Name="V2ndapproverdate_">
+          <DataField>V2ndapproverdate_</DataField>
+        </Field>
+        <Field Name="V1stapprover_">
+          <DataField>V1stapprover_</DataField>
+        </Field>
+        <Field Name="V1stapproverdate_">
+          <DataField>V1stapproverdate_</DataField>
+        </Field>
+        <Field Name="DescriptionCaption">
+          <DataField>DescriptionCaption</DataField>
+        </Field>
+        <Field Name="AmountCaption">
+          <DataField>AmountCaption</DataField>
+        </Field>
+        <Field Name="Request_Lines1__Account_No_Caption">
+          <DataField>Request_Lines1__Account_No_Caption</DataField>
+        </Field>
+        <Field Name="TOTAL_EXPENSESCaption">
+          <DataField>TOTAL_EXPENSESCaption</DataField>
+        </Field>
+        <Field Name="LESS__ADVANCECaption">
+          <DataField>LESS__ADVANCECaption</DataField>
+        </Field>
+        <Field Name="AMOUNT_DUE_TO__FROM__EMPLOYEECaption">
+          <DataField>AMOUNT_DUE_TO__FROM__EMPLOYEECaption</DataField>
+        </Field>
+        <Field Name="PAYMENT_RECEIVED_BYCaption">
+          <DataField>PAYMENT_RECEIVED_BYCaption</DataField>
+        </Field>
+        <Field Name="SIGNATURE__________________________________________________Caption">
+          <DataField>SIGNATURE__________________________________________________Caption</DataField>
+        </Field>
+        <Field Name="DATE__________________________________________________Caption">
+          <DataField>DATE__________________________________________________Caption</DataField>
+        </Field>
+        <Field Name="APPROVED_BY_Caption">
+          <DataField>APPROVED_BY_Caption</DataField>
+        </Field>
+        <Field Name="SIGNATURE_Caption">
+          <DataField>SIGNATURE_Caption</DataField>
+        </Field>
+        <Field Name="DATE__________________________________________________Caption_Control1000000036">
+          <DataField>DATE__________________________________________________Caption_Control1000000036</DataField>
+        </Field>
+        <Field Name="CHECKED_BY_Caption">
+          <DataField>CHECKED_BY_Caption</DataField>
+        </Field>
+        <Field Name="SIGNATURECaption">
+          <DataField>SIGNATURECaption</DataField>
+        </Field>
+        <Field Name="DATE__________________________________________________Caption_Control1000000042">
+          <DataField>DATE__________________________________________________Caption_Control1000000042</DataField>
+        </Field>
+        <Field Name="PREPARED_BYCaption">
+          <DataField>PREPARED_BYCaption</DataField>
+        </Field>
+        <Field Name="SIGNATURECaption_Control1000000055">
+          <DataField>SIGNATURECaption_Control1000000055</DataField>
+        </Field>
+        <Field Name="DATE__________________________________________________Caption_Control1000000062">
+          <DataField>DATE__________________________________________________Caption_Control1000000062</DataField>
+        </Field>
+        <Field Name="APPROVALCaption">
+          <DataField>APPROVALCaption</DataField>
+        </Field>
+        <Field Name="Request_Lines1_Document_No">
+          <DataField>Request_Lines1_Document_No</DataField>
+        </Field>
+        <Field Name="Request_Lines1_Line_No_">
+          <DataField>Request_Lines1_Line_No_</DataField>
+        </Field>
+        <Field Name="ChequeDateLbl">
+          <DataField>ChequeDateLbl</DataField>
+        </Field>
+        <Field Name="ChequeNoLbl">
+          <DataField>ChequeNoLbl</DataField>
+        </Field>
+        <Field Name="BankLbl">
+          <DataField>BankLbl</DataField>
+        </Field>
+        <Field Name="Budget">
+          <DataField>Budget</DataField>
+        </Field>
+        <Field Name="ImprestDetailsLbl">
+          <DataField>ImprestDetailsLbl</DataField>
+        </Field>
+        <Field Name="DesignationLbl">
+          <DataField>DesignationLbl</DataField>
+        </Field>
+        <Field Name="AccountType">
+          <DataField>AccountType</DataField>
+        </Field>
+        <Field Name="TransactionType">
+          <DataField>TransactionType</DataField>
+        </Field>
+        <Field Name="AccountNo">
+          <DataField>AccountNo</DataField>
+        </Field>
+        <Field Name="Amnt">
+          <DataField>Amnt</DataField>
+        </Field>
+        <Field Name="AmntFormat">
+          <DataField>AmntFormat</DataField>
+        </Field>
+        <Field Name="AccDescription">
+          <DataField>AccDescription</DataField>
+        </Field>
+        <Field Name="RemarksLbl">
+          <DataField>RemarksLbl</DataField>
+        </Field>
+        <Field Name="VoteLbl">
+          <DataField>VoteLbl</DataField>
+        </Field>
+        <Field Name="FooterLbl">
+          <DataField>FooterLbl</DataField>
+        </Field>
+        <Field Name="Jobtitle_1">
+          <DataField>Jobtitle_1</DataField>
+        </Field>
+        <Field Name="Jobtitle_2">
+          <DataField>Jobtitle_2</DataField>
+        </Field>
+        <Field Name="Jobtitle_3">
+          <DataField>Jobtitle_3</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

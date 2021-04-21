@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No_InsureHeader">
+          <DataField>No_InsureHeader</DataField>
+        </Field>
+        <Field Name="InsuredNo_InsureHeader">
+          <DataField>InsuredNo_InsureHeader</DataField>
+        </Field>
+        <Field Name="PolicyDescription_InsureHeader">
+          <DataField>PolicyDescription_InsureHeader</DataField>
+        </Field>
+        <Field Name="InsuredAddress_InsureHeader">
+          <DataField>InsuredAddress_InsureHeader</DataField>
+        </Field>
+        <Field Name="InsuredAddress2_InsureHeader">
+          <DataField>InsuredAddress2_InsureHeader</DataField>
+        </Field>
+        <Field Name="PostCode_InsureHeader">
+          <DataField>PostCode_InsureHeader</DataField>
+        </Field>
+        <Field Name="InsuredName_InsureHeader">
+          <DataField>InsuredName_InsureHeader</DataField>
+        </Field>
+        <Field Name="Forms_InsureHeader">
+          <DataField>Forms_InsureHeader</DataField>
+        </Field>
+        <Field Name="FromDate_InsureHeader">
+          <DataField>FromDate_InsureHeader</DataField>
+        </Field>
+        <Field Name="ToDate_InsureHeader">
+          <DataField>ToDate_InsureHeader</DataField>
+        </Field>
+        <Field Name="UndewriterName_InsureHeader">
+          <DataField>UndewriterName_InsureHeader</DataField>
+        </Field>
+        <Field Name="NatureOfBusiness_InsureHeader">
+          <DataField>NatureOfBusiness_InsureHeader</DataField>
+        </Field>
+        <Field Name="TotalPremiumAmount_InsureHeader">
+          <DataField>TotalPremiumAmount_InsureHeader</DataField>
+        </Field>
+        <Field Name="TotalPremiumAmount_InsureHeaderFormat">
+          <DataField>TotalPremiumAmount_InsureHeaderFormat</DataField>
+        </Field>
+        <Field Name="CurrencyCode_InsureHeader">
+          <DataField>CurrencyCode_InsureHeader</DataField>
+        </Field>
+        <Field Name="ShowTotal_InsureHeader">
+          <DataField>ShowTotal_InsureHeader</DataField>
+        </Field>
+        <Field Name="ShowTotal_InsureHeaderFormat">
+          <DataField>ShowTotal_InsureHeaderFormat</DataField>
+        </Field>
+        <Field Name="FaxNo_CompanyInformation">
+          <DataField>FaxNo_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Name_CompanyInformation">
+          <DataField>Name_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address_CompanyInformation">
+          <DataField>Address_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address2_CompanyInformation">
+          <DataField>Address2_CompanyInformation</DataField>
+        </Field>
+        <Field Name="City_CompanyInformation">
+          <DataField>City_CompanyInformation</DataField>
+        </Field>
+        <Field Name="PhoneNo_CompanyInformation">
+          <DataField>PhoneNo_CompanyInformation</DataField>
+        </Field>
+        <Field Name="EMail_CompanyInformation">
+          <DataField>EMail_CompanyInformation</DataField>
+        </Field>
+        <Field Name="HomePage_CompanyInformation">
+          <DataField>HomePage_CompanyInformation</DataField>
+        </Field>
+        <Field Name="CompanyPic2_CompanyInformation">
+          <DataField>CompanyPic2_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Description_CLGS">
+          <DataField>Description_CLGS</DataField>
+        </Field>
+        <Field Name="DescriptionType_CLGS">
+          <DataField>DescriptionType_CLGS</DataField>
+        </Field>
+        <Field Name="LineNo_CLGS">
+          <DataField>LineNo_CLGS</DataField>
+        </Field>
+        <Field Name="TextType_CLGS">
+          <DataField>TextType_CLGS</DataField>
+        </Field>
+        <Field Name="Rateage_CLGS">
+          <DataField>Rateage_CLGS</DataField>
+        </Field>
+        <Field Name="Rateage_CLGSFormat">
+          <DataField>Rateage_CLGSFormat</DataField>
+        </Field>
+        <Field Name="SumInsured_CLGS">
+          <DataField>SumInsured_CLGS</DataField>
+        </Field>
+        <Field Name="SumInsured_CLGSFormat">
+          <DataField>SumInsured_CLGSFormat</DataField>
+        </Field>
+        <Field Name="Amount_CLGS">
+          <DataField>Amount_CLGS</DataField>
+        </Field>
+        <Field Name="Amount_CLGSFormat">
+          <DataField>Amount_CLGSFormat</DataField>
+        </Field>
+        <Field Name="suminsuredcheck">
+          <DataField>suminsuredcheck</DataField>
+        </Field>
+        <Field Name="showbold1">
+          <DataField>showbold1</DataField>
+        </Field>
+        <Field Name="ActualValue_CLGS">
+          <DataField>ActualValue_CLGS</DataField>
+        </Field>
+        <Field Name="Description_Interest">
+          <DataField>Description_Interest</DataField>
+        </Field>
+        <Field Name="DescriptionType_Interest">
+          <DataField>DescriptionType_Interest</DataField>
+        </Field>
+        <Field Name="TextType_Interest">
+          <DataField>TextType_Interest</DataField>
+        </Field>
+        <Field Name="showbold2">
+          <DataField>showbold2</DataField>
+        </Field>
+        <Field Name="Description_SumInsured">
+          <DataField>Description_SumInsured</DataField>
+        </Field>
+        <Field Name="RegistrationNo_SumInsured">
+          <DataField>RegistrationNo_SumInsured</DataField>
+        </Field>
+        <Field Name="SerialNo_SumInsured">
+          <DataField>SerialNo_SumInsured</DataField>
+        </Field>
+        <Field Name="SumInsured_SumInsured">
+          <DataField>SumInsured_SumInsured</DataField>
+        </Field>
+        <Field Name="SumInsured_SumInsuredFormat">
+          <DataField>SumInsured_SumInsuredFormat</DataField>
+        </Field>
+        <Field Name="showbold3">
+          <DataField>showbold3</DataField>
+        </Field>
+        <Field Name="FirstLoss_SumInsured">
+          <DataField>FirstLoss_SumInsured</DataField>
+        </Field>
+        <Field Name="FirstLoss_SumInsuredFormat">
+          <DataField>FirstLoss_SumInsuredFormat</DataField>
+        </Field>
+        <Field Name="RateType_SumInsured">
+          <DataField>RateType_SumInsured</DataField>
+        </Field>
+        <Field Name="Rateage_SumInsured">
+          <DataField>Rateage_SumInsured</DataField>
+        </Field>
+        <Field Name="Rateage_SumInsuredFormat">
+          <DataField>Rateage_SumInsuredFormat</DataField>
+        </Field>
+        <Field Name="Showtotal_2">
+          <DataField>Showtotal_2</DataField>
+        </Field>
+        <Field Name="MaxSumInsured_SumInsured">
+          <DataField>MaxSumInsured_SumInsured</DataField>
+        </Field>
+        <Field Name="MaxSumInsured_SumInsuredFormat">
+          <DataField>MaxSumInsured_SumInsuredFormat</DataField>
+        </Field>
+        <Field Name="Description_Geographical">
+          <DataField>Description_Geographical</DataField>
+        </Field>
+        <Field Name="showbold4">
+          <DataField>showbold4</DataField>
+        </Field>
+        <Field Name="Description_clauses">
+          <DataField>Description_clauses</DataField>
+        </Field>
+        <Field Name="showbold5">
+          <DataField>showbold5</DataField>
+        </Field>
+        <Field Name="Description_Basis">
+          <DataField>Description_Basis</DataField>
+        </Field>
+        <Field Name="ActualValue_Basis">
+          <DataField>ActualValue_Basis</DataField>
+        </Field>
+        <Field Name="showbold6">
+          <DataField>showbold6</DataField>
+        </Field>
+        <Field Name="Description_Limits">
+          <DataField>Description_Limits</DataField>
+        </Field>
+        <Field Name="ActualValue_Limits">
+          <DataField>ActualValue_Limits</DataField>
+        </Field>
+        <Field Name="showbold8">
+          <DataField>showbold8</DataField>
+        </Field>
+        <Field Name="Description_Excess">
+          <DataField>Description_Excess</DataField>
+        </Field>
+        <Field Name="ActualValue_Excess">
+          <DataField>ActualValue_Excess</DataField>
+        </Field>
+        <Field Name="showbold7">
+          <DataField>showbold7</DataField>
+        </Field>
+        <Field Name="Name_CoinsuranceReinsuranceLines">
+          <DataField>Name_CoinsuranceReinsuranceLines</DataField>
+        </Field>
+        <Field Name="CoInsurance_CoinsuranceReinsuranceLines">
+          <DataField>CoInsurance_CoinsuranceReinsuranceLines</DataField>
+        </Field>
+        <Field Name="CoInsurance_CoinsuranceReinsuranceLinesFormat">
+          <DataField>CoInsurance_CoinsuranceReinsuranceLinesFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

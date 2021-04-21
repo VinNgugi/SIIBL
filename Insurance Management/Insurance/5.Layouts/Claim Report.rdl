@@ -1,0 +1,1267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>c49b3763-be6c-4ba1-b852-9aad028c7230</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.26042in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Claim Ref</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Policy Class</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox5">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Particulars of Claim</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox7">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Date Of Loss</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox7</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox9">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Date Reported</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox11">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Claim Amount</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox13">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Current Status</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ClaimNo_Claim">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!ClaimNo_Claim.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ClaimNo_Claim</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Class_Claim">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!Class_Claim.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Class_Claim</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Detailsofdamage_Claim">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!Detailsofdamage_Claim.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Detailsofdamage_Claim</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="DateofOccurence_Claim">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!DateofOccurence_Claim.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>DateofOccurence_Claim</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="WhenReported_Claim">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!WhenReported_Claim.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>WhenReported_Claim</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="EstCostofRepairs_Claim">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!EstCostofRepairs_Claim.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>EstCostofRepairs_Claim</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ClaimStatus_Claim">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!ClaimStatus_Claim.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ClaimStatus_Claim</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Top>0.18625in</Top>
+            <Left>0.22792in</Left>
+            <Height>0.5in</Height>
+            <Width>7.26042in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>7.91542in</Width>
+      <Page>
+        <PageHeader>
+          <Height>1.64583in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Image Name="Image1">
+              <Source>Database</Source>
+              <Value>=First(Fields!Picture.Value, "DataSet_Result")</Value>
+              <MIMEType>image/bmp</MIMEType>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.09722in</Top>
+              <Left>0.68167in</Left>
+              <Height>1.11458in</Height>
+              <Width>3.41667in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Textbox Name="Textbox2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!CName.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>0.09722in</Top>
+              <Left>4.49417in</Left>
+              <Height>0.1875in</Height>
+              <Width>2.73958in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox4">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!CAddress.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>0.32639in</Top>
+              <Left>4.49417in</Left>
+              <Height>0.1875in</Height>
+              <Width>2.73958in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox6">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!CAdd2.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">,</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!CCity.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>0.54166in</Top>
+              <Left>4.49417in</Left>
+              <Height>0.1875in</Height>
+              <Width>2.73958in</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox8">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">Telephone: </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!CPhoneNo.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>0.75694in</Top>
+              <Left>4.49417in</Left>
+              <Height>0.1875in</Height>
+              <Width>2.73958in</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox10">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">Email: </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!CEmail.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>0.98611in</Top>
+              <Left>4.49417in</Left>
+              <Height>0.1875in</Height>
+              <Width>2.73958in</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox14">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">Web: </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!CWeb.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>1.21528in</Top>
+              <Left>4.49417in</Left>
+              <Height>0.1875in</Height>
+              <Width>2.73958in</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox12">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">CLAIM REPORT</Value>
+                      <Style>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox12</rd:DefaultName>
+              <Top>1.37375in</Top>
+              <Left>0.2175in</Left>
+              <Height>0.26514in</Height>
+              <Width>4.24889in</Width>
+              <ZIndex>7</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Picture">
+          <DataField>Picture</DataField>
+        </Field>
+        <Field Name="CName">
+          <DataField>CName</DataField>
+        </Field>
+        <Field Name="CAddress">
+          <DataField>CAddress</DataField>
+        </Field>
+        <Field Name="CAdd2">
+          <DataField>CAdd2</DataField>
+        </Field>
+        <Field Name="CCity">
+          <DataField>CCity</DataField>
+        </Field>
+        <Field Name="CPhoneNo">
+          <DataField>CPhoneNo</DataField>
+        </Field>
+        <Field Name="CEmail">
+          <DataField>CEmail</DataField>
+        </Field>
+        <Field Name="CWeb">
+          <DataField>CWeb</DataField>
+        </Field>
+        <Field Name="CFaxno">
+          <DataField>CFaxno</DataField>
+        </Field>
+        <Field Name="ClaimNo_Claim">
+          <DataField>ClaimNo_Claim</DataField>
+        </Field>
+        <Field Name="PolicyNo_Claim">
+          <DataField>PolicyNo_Claim</DataField>
+        </Field>
+        <Field Name="NameofInsured_Claim">
+          <DataField>NameofInsured_Claim</DataField>
+        </Field>
+        <Field Name="RenewalDate_Claim">
+          <DataField>RenewalDate_Claim</DataField>
+        </Field>
+        <Field Name="AgentBroker_Claim">
+          <DataField>AgentBroker_Claim</DataField>
+        </Field>
+        <Field Name="InsuredAddress_Claim">
+          <DataField>InsuredAddress_Claim</DataField>
+        </Field>
+        <Field Name="InsuredTelephoneNo_Claim">
+          <DataField>InsuredTelephoneNo_Claim</DataField>
+        </Field>
+        <Field Name="District_Claim">
+          <DataField>District_Claim</DataField>
+        </Field>
+        <Field Name="Occupation_Claim">
+          <DataField>Occupation_Claim</DataField>
+        </Field>
+        <Field Name="Make_Claim">
+          <DataField>Make_Claim</DataField>
+        </Field>
+        <Field Name="RegistrationNo_Claim">
+          <DataField>RegistrationNo_Claim</DataField>
+        </Field>
+        <Field Name="YearofManufacture_Claim">
+          <DataField>YearofManufacture_Claim</DataField>
+        </Field>
+        <Field Name="CubicCapacitycc_Claim">
+          <DataField>CubicCapacitycc_Claim</DataField>
+        </Field>
+        <Field Name="PurposeattimeofAccident_Claim">
+          <DataField>PurposeattimeofAccident_Claim</DataField>
+        </Field>
+        <Field Name="DriversName_Claim">
+          <DataField>DriversName_Claim</DataField>
+        </Field>
+        <Field Name="DriversAge_Claim">
+          <DataField>DriversAge_Claim</DataField>
+        </Field>
+        <Field Name="DriversAddress_Claim">
+          <DataField>DriversAddress_Claim</DataField>
+        </Field>
+        <Field Name="DriversOccupation_Claim">
+          <DataField>DriversOccupation_Claim</DataField>
+        </Field>
+        <Field Name="OtherDetails_Claim">
+          <DataField>OtherDetails_Claim</DataField>
+        </Field>
+        <Field Name="DateofOccurence_Claim">
+          <DataField>DateofOccurence_Claim</DataField>
+        </Field>
+        <Field Name="WhenReported_Claim">
+          <DataField>WhenReported_Claim</DataField>
+        </Field>
+        <Field Name="Time_Claim">
+          <DataField>Time_Claim</DataField>
+        </Field>
+        <Field Name="Place_Claim">
+          <DataField>Place_Claim</DataField>
+        </Field>
+        <Field Name="EstCostofRepairs_Claim">
+          <DataField>EstCostofRepairs_Claim</DataField>
+        </Field>
+        <Field Name="EstCostofRepairs_ClaimFormat">
+          <DataField>EstCostofRepairs_ClaimFormat</DataField>
+        </Field>
+        <Field Name="AmountSettled_Claim">
+          <DataField>AmountSettled_Claim</DataField>
+        </Field>
+        <Field Name="AmountSettled_ClaimFormat">
+          <DataField>AmountSettled_ClaimFormat</DataField>
+        </Field>
+        <Field Name="NatureandCauseofAccident_Claim">
+          <DataField>NatureandCauseofAccident_Claim</DataField>
+        </Field>
+        <Field Name="ReportedtoPolice_Claim">
+          <DataField>ReportedtoPolice_Claim</DataField>
+        </Field>
+        <Field Name="DateReported_Claim">
+          <DataField>DateReported_Claim</DataField>
+        </Field>
+        <Field Name="ReportReferenceNo_Claim">
+          <DataField>ReportReferenceNo_Claim</DataField>
+        </Field>
+        <Field Name="ActionTakenbyPolice_Claim">
+          <DataField>ActionTakenbyPolice_Claim</DataField>
+        </Field>
+        <Field Name="LocationofInspection_Claim">
+          <DataField>LocationofInspection_Claim</DataField>
+        </Field>
+        <Field Name="NameofPoliceStation_Claim">
+          <DataField>NameofPoliceStation_Claim</DataField>
+        </Field>
+        <Field Name="Detailsofdamage_Claim">
+          <DataField>Detailsofdamage_Claim</DataField>
+        </Field>
+        <Field Name="AppointedAssessor_Claim">
+          <DataField>AppointedAssessor_Claim</DataField>
+        </Field>
+        <Field Name="AnyThirdPartyClaims_Claim">
+          <DataField>AnyThirdPartyClaims_Claim</DataField>
+        </Field>
+        <Field Name="DetailsofThirdPartyClaims_Claim">
+          <DataField>DetailsofThirdPartyClaims_Claim</DataField>
+        </Field>
+        <Field Name="Nameofthirdparty_Claim">
+          <DataField>Nameofthirdparty_Claim</DataField>
+        </Field>
+        <Field Name="Addressof3rdParty_Claim">
+          <DataField>Addressof3rdParty_Claim</DataField>
+        </Field>
+        <Field Name="CertificateNo_Claim">
+          <DataField>CertificateNo_Claim</DataField>
+        </Field>
+        <Field Name="V3rdPartyPolicyNo_Claim">
+          <DataField>V3rdPartyPolicyNo_Claim</DataField>
+        </Field>
+        <Field Name="DriverName_Claim">
+          <DataField>DriverName_Claim</DataField>
+        </Field>
+        <Field Name="InsuranceCompany_Claim">
+          <DataField>InsuranceCompany_Claim</DataField>
+        </Field>
+        <Field Name="VehicleRegistrationNo_Claim">
+          <DataField>VehicleRegistrationNo_Claim</DataField>
+        </Field>
+        <Field Name="NoSeries_Claim">
+          <DataField>NoSeries_Claim</DataField>
+        </Field>
+        <Field Name="InsurerPolicyNo_Claim">
+          <DataField>InsurerPolicyNo_Claim</DataField>
+        </Field>
+        <Field Name="AgentBrokerName_Claim">
+          <DataField>AgentBrokerName_Claim</DataField>
+        </Field>
+        <Field Name="LineNo_Claim">
+          <DataField>LineNo_Claim</DataField>
+        </Field>
+        <Field Name="Class_Claim">
+          <DataField>Class_Claim</DataField>
+        </Field>
+        <Field Name="PlotNo_Claim">
+          <DataField>PlotNo_Claim</DataField>
+        </Field>
+        <Field Name="Street_Claim">
+          <DataField>Street_Claim</DataField>
+        </Field>
+        <Field Name="MethodofEntrytoPremises_Claim">
+          <DataField>MethodofEntrytoPremises_Claim</DataField>
+        </Field>
+        <Field Name="WasAlarmFittedWorking_Claim">
+          <DataField>WasAlarmFittedWorking_Claim</DataField>
+        </Field>
+        <Field Name="IfNotReasons_Claim">
+          <DataField>IfNotReasons_Claim</DataField>
+        </Field>
+        <Field Name="AreGuardsEmployed_Claim">
+          <DataField>AreGuardsEmployed_Claim</DataField>
+        </Field>
+        <Field Name="NameofGuardFirm_Claim">
+          <DataField>NameofGuardFirm_Claim</DataField>
+        </Field>
+        <Field Name="ClaimType_Claim">
+          <DataField>ClaimType_Claim</DataField>
+        </Field>
+        <Field Name="CustomerNo_Claim">
+          <DataField>CustomerNo_Claim</DataField>
+        </Field>
+        <Field Name="Garage_Claim">
+          <DataField>Garage_Claim</DataField>
+        </Field>
+        <Field Name="NameofGarage_Claim">
+          <DataField>NameofGarage_Claim</DataField>
+        </Field>
+        <Field Name="DatetakentoGarage_Claim">
+          <DataField>DatetakentoGarage_Claim</DataField>
+        </Field>
+        <Field Name="AssessorsNotificationDate_Claim">
+          <DataField>AssessorsNotificationDate_Claim</DataField>
+        </Field>
+        <Field Name="Thirdpartytype_Claim">
+          <DataField>Thirdpartytype_Claim</DataField>
+        </Field>
+        <Field Name="DateofNotification_Claim">
+          <DataField>DateofNotification_Claim</DataField>
+        </Field>
+        <Field Name="MedicalExpenses_Claim">
+          <DataField>MedicalExpenses_Claim</DataField>
+        </Field>
+        <Field Name="MedicalExpenses_ClaimFormat">
+          <DataField>MedicalExpenses_ClaimFormat</DataField>
+        </Field>
+        <Field Name="TDD_Claim">
+          <DataField>TDD_Claim</DataField>
+        </Field>
+        <Field Name="TDD_ClaimFormat">
+          <DataField>TDD_ClaimFormat</DataField>
+        </Field>
+        <Field Name="PTD_Claim">
+          <DataField>PTD_Claim</DataField>
+        </Field>
+        <Field Name="PTD_ClaimFormat">
+          <DataField>PTD_ClaimFormat</DataField>
+        </Field>
+        <Field Name="Particulars_Claim">
+          <DataField>Particulars_Claim</DataField>
+        </Field>
+        <Field Name="InsurersClaimNo_Claim">
+          <DataField>InsurersClaimNo_Claim</DataField>
+        </Field>
+        <Field Name="CurrentStatus_Claim">
+          <DataField>CurrentStatus_Claim</DataField>
+        </Field>
+        <Field Name="ClaimAmount_Claim">
+          <DataField>ClaimAmount_Claim</DataField>
+        </Field>
+        <Field Name="ClaimAmount_ClaimFormat">
+          <DataField>ClaimAmount_ClaimFormat</DataField>
+        </Field>
+        <Field Name="PolicyType_Claim">
+          <DataField>PolicyType_Claim</DataField>
+        </Field>
+        <Field Name="PoliceComments_Claim">
+          <DataField>PoliceComments_Claim</DataField>
+        </Field>
+        <Field Name="Country_Claim">
+          <DataField>Country_Claim</DataField>
+        </Field>
+        <Field Name="Death_Claim">
+          <DataField>Death_Claim</DataField>
+        </Field>
+        <Field Name="Death_ClaimFormat">
+          <DataField>Death_ClaimFormat</DataField>
+        </Field>
+        <Field Name="ReserveAmount_Claim">
+          <DataField>ReserveAmount_Claim</DataField>
+        </Field>
+        <Field Name="ReserveAmount_ClaimFormat">
+          <DataField>ReserveAmount_ClaimFormat</DataField>
+        </Field>
+        <Field Name="Excess_Claim">
+          <DataField>Excess_Claim</DataField>
+        </Field>
+        <Field Name="Excess_ClaimFormat">
+          <DataField>Excess_ClaimFormat</DataField>
+        </Field>
+        <Field Name="ClassDescription_Claim">
+          <DataField>ClassDescription_Claim</DataField>
+        </Field>
+        <Field Name="OutstandingClaimAmount_Claim">
+          <DataField>OutstandingClaimAmount_Claim</DataField>
+        </Field>
+        <Field Name="OutstandingClaimAmount_ClaimFormat">
+          <DataField>OutstandingClaimAmount_ClaimFormat</DataField>
+        </Field>
+        <Field Name="Insured_Claim">
+          <DataField>Insured_Claim</DataField>
+        </Field>
+        <Field Name="ClaimStatus_Claim">
+          <DataField>ClaimStatus_Claim</DataField>
+        </Field>
+        <Field Name="PaymentStatus_Claim">
+          <DataField>PaymentStatus_Claim</DataField>
+        </Field>
+        <Field Name="CopyTo1_Claim">
+          <DataField>CopyTo1_Claim</DataField>
+        </Field>
+        <Field Name="CopyTo2_Claim">
+          <DataField>CopyTo2_Claim</DataField>
+        </Field>
+        <Field Name="CopyTo3_Claim">
+          <DataField>CopyTo3_Claim</DataField>
+        </Field>
+        <Field Name="MemorandumAddress_Claim">
+          <DataField>MemorandumAddress_Claim</DataField>
+        </Field>
+        <Field Name="Name_Claim">
+          <DataField>Name_Claim</DataField>
+        </Field>
+        <Field Name="IDNumber_Claim">
+          <DataField>IDNumber_Claim</DataField>
+        </Field>
+        <Field Name="EmploymetNo_Claim">
+          <DataField>EmploymetNo_Claim</DataField>
+        </Field>
+        <Field Name="PatientName_Claim">
+          <DataField>PatientName_Claim</DataField>
+        </Field>
+        <Field Name="MembershipNo_Claim">
+          <DataField>MembershipNo_Claim</DataField>
+        </Field>
+        <Field Name="DateofBirth_Claim">
+          <DataField>DateofBirth_Claim</DataField>
+        </Field>
+        <Field Name="Sex_Claim">
+          <DataField>Sex_Claim</DataField>
+        </Field>
+        <Field Name="Relationship_Claim">
+          <DataField>Relationship_Claim</DataField>
+        </Field>
+        <Field Name="Deductible_Claim">
+          <DataField>Deductible_Claim</DataField>
+        </Field>
+        <Field Name="Deductible_ClaimFormat">
+          <DataField>Deductible_ClaimFormat</DataField>
+        </Field>
+        <Field Name="CoInsurers_Claim">
+          <DataField>CoInsurers_Claim</DataField>
+        </Field>
+        <Field Name="Classcode_Claim">
+          <DataField>Classcode_Claim</DataField>
+        </Field>
+        <Field Name="CoInsurerName_Claim">
+          <DataField>CoInsurerName_Claim</DataField>
+        </Field>
+        <Field Name="CustomerPostingGroup_Claim">
+          <DataField>CustomerPostingGroup_Claim</DataField>
+        </Field>
+        <Field Name="GrossAmount_Claim">
+          <DataField>GrossAmount_Claim</DataField>
+        </Field>
+        <Field Name="GrossAmount_ClaimFormat">
+          <DataField>GrossAmount_ClaimFormat</DataField>
+        </Field>
+        <Field Name="ExcessAmount_Claim">
+          <DataField>ExcessAmount_Claim</DataField>
+        </Field>
+        <Field Name="ExcessAmount_ClaimFormat">
+          <DataField>ExcessAmount_ClaimFormat</DataField>
+        </Field>
+        <Field Name="TreatyNumber_Claim">
+          <DataField>TreatyNumber_Claim</DataField>
+        </Field>
+        <Field Name="AddendumCode_Claim">
+          <DataField>AddendumCode_Claim</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
